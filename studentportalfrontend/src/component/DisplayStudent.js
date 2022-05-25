@@ -11,6 +11,7 @@ const columns = [
 export default function DisplayStudent() {
     const [studentsArray, setStudents] = useState([]);
 
+    /**Here, we are fetching student from the api */
     useEffect(()=>{
         fetch("http://localhost:8080/student")
         .then(res=>res.json())

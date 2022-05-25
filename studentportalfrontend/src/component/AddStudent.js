@@ -11,6 +11,7 @@ export default function AddStudent() {
     const submitData =(e) =>{
         e.preventDefault();
         const studentData = {name,level};
+        /**Here, we are using a post request to send data to the api */
         fetch("http://localhost:8080/student/add",
         {
             method: "POST",
